@@ -12,6 +12,7 @@
 		C0454F281F1580BD00344455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0454F261F1580BD00344455 /* Main.storyboard */; };
 		C0454F2A1F1580BD00344455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0454F291F1580BD00344455 /* Assets.xcassets */; };
 		C0454F2D1F1580BD00344455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0454F2B1F1580BD00344455 /* LaunchScreen.storyboard */; };
+		C0454F351F191F7300344455 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0454F341F191F7300344455 /* SwipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C0454F291F1580BD00344455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0454F2C1F1580BD00344455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0454F2E1F1580BD00344455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0454F341F191F7300344455 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C0454F221F1580BD00344455 /* AppDelegate.swift */,
 				C0454F241F1580BD00344455 /* ViewController.swift */,
+				C0454F341F191F7300344455 /* SwipeViewController.swift */,
 				C0454F261F1580BD00344455 /* Main.storyboard */,
 				C0454F291F1580BD00344455 /* Assets.xcassets */,
 				C0454F2B1F1580BD00344455 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				C0454F251F1580BD00344455 /* ViewController.swift in Sources */,
 				C0454F231F1580BD00344455 /* AppDelegate.swift in Sources */,
+				C0454F351F191F7300344455 /* SwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +308,7 @@
 				C0454F331F1580BD00344455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
