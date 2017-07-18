@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		317E9C4D1F1EA82E00D4D436 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317E9C4C1F1EA82E00D4D436 /* ComposeViewController.swift */; };
+		317E9C4F1F1EB8E100D4D436 /* ComposeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317E9C4E1F1EB8E100D4D436 /* ComposeVC.storyboard */; };
 		C0454F231F1580BD00344455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0454F221F1580BD00344455 /* AppDelegate.swift */; };
 		C0454F251F1580BD00344455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0454F241F1580BD00344455 /* ViewController.swift */; };
 		C0454F281F1580BD00344455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0454F261F1580BD00344455 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		317E9C4C1F1EA82E00D4D436 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		317E9C4E1F1EB8E100D4D436 /* ComposeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComposeVC.storyboard; sourceTree = "<group>"; };
 		C0454F1F1F1580BD00344455 /* Tinqer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinqer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0454F221F1580BD00344455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0454F241F1580BD00344455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C0454F341F191F7300344455 /* SwipeViewController.swift */,
 				317E9C4C1F1EA82E00D4D436 /* ComposeViewController.swift */,
 				C0454F261F1580BD00344455 /* Main.storyboard */,
+				317E9C4E1F1EB8E100D4D436 /* ComposeVC.storyboard */,
 				C0454F291F1580BD00344455 /* Assets.xcassets */,
 				C0454F2B1F1580BD00344455 /* LaunchScreen.storyboard */,
 				C0454F2E1F1580BD00344455 /* Info.plist */,
@@ -132,6 +135,7 @@
 			files = (
 				C0454F2D1F1580BD00344455 /* LaunchScreen.storyboard in Resources */,
 				C0454F2A1F1580BD00344455 /* Assets.xcassets in Resources */,
+				317E9C4F1F1EB8E100D4D436 /* ComposeVC.storyboard in Resources */,
 				C0454F281F1580BD00344455 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
