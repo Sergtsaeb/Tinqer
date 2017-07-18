@@ -9,5 +9,6 @@
 import Foundation
 
 class Bloom {
+    var category = [Category]()
     
 }

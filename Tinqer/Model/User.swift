@@ -10,4 +10,13 @@ import Foundation
 
 class User {
     
+    let nameFirst: String? = nil
+    let nameLast: String? = nil
+    var likedBlooms: [Bloom] = []
+    var ownedBlooms = [Bloom]()
+    var favoritedBlooms = [Bloom]()
+    var sharedBlooms = [Bloom]()
+    
+    
+    
 }

@@ -10,5 +10,7 @@ import Foundation
 
 class Category {
     
+    var title: String = ""
+    var color: String = ""
     
 }
