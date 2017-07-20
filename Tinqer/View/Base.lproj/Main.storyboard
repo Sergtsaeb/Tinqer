@@ -24,6 +24,12 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iog-mE-dMj">
                                 <rect key="frame" x="67" y="171" width="240" height="284"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="likeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="oIu-2j-NvF">
+                                        <rect key="frame" x="46" y="67" width="149" height="151"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.5450980392" green="0.4549019608" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -39,6 +45,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iog-mE-dMj" secondAttribute="bottom" constant="212" id="agz-ng-LZV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="swipeImageView" destination="oIu-2j-NvF" id="S4c-ql-XcJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="zF9-3s-8t9">
@@ -50,4 +59,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="likeIcon" width="266" height="200"/>
+    </resources>
 </document>

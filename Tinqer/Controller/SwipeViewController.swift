@@ -10,6 +10,9 @@ import UIKit
 
 class SwipeViewController: UIViewController {
     
+
+    @IBOutlet weak var swipeImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,12 +26,20 @@ class SwipeViewController: UIViewController {
         let point = sender.translation(in: view)
         let xFromCenter = card.center.x - view.center.x
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
+        swipeImageView.alpha = 0.6
      
         if xFromCenter > 0 {
             //imageview
+            swipeImageView.image = #imageLiteral(resourceName: "likeIcon")
+            swipeImageView.tintColor = UIColor.green
+        
         } else {
             //dislike image view
+            swipeImageView.image = #imageLiteral(resourceName: "likeIcon")
+            swipeImageView.tintColor = UIColor.red
         }
+        
+        swipeImageView.alpha = abs(xFromCenter) / view.center.x
         
         /*
          maybe a switch statement to try this?
