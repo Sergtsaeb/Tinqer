@@ -12,6 +12,7 @@ class SwipeViewController: UIViewController {
 
     @IBOutlet weak var swipeImageView: UIImageView!
     @IBOutlet weak var card: UIView!
+    var divisor: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,11 @@ class SwipeViewController: UIViewController {
         let card = sender.view!
         let point = sender.translation(in: view)
         let xFromCenter = card.center.x - view.center.x
+        
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
-        swipeImageView.alpha = 0.6
+        
+        let scale = min(100/abs(xFromCenter), 1)
+        card.transform = CGAffineTransform(rotationAngle: xFromCenter/divisor).scaledBy(x: scale, y: scale)
      
         if xFromCenter > 0 {
             //imageview
