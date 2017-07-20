@@ -36,6 +36,17 @@
                                     <outletCollection property="gestureRecognizers" destination="zF9-3s-8t9" appends="YES" id="pdq-9y-YZU"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-WL-c5j">
+                                <rect key="frame" x="164" y="523" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5450980392" green="0.4549019608" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GSN-vH-Nkn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -46,6 +57,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="card" destination="iog-mE-dMj" id="Y8G-qF-Ils"/>
                         <outlet property="swipeImageView" destination="oIu-2j-NvF" id="S4c-ql-XcJ"/>
                     </connections>
                 </viewController>
