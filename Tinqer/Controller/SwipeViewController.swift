@@ -21,18 +21,20 @@ class SwipeViewController: UIViewController {
         //get the pan gesture translation value and add it to be the new cener value for the view
         let card = sender.view!
         let point = sender.translation(in: view)
+        let xFromCenter = card.center.x - view.center.x
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
-        //        print(card.center.x)
-        //        print(card.center.y)
-        //        print(view.center.y)
-        //        print(view.center.x)
+     
+        if xFromCenter > 0 {
+            //imageview
+        } else {
+            //dislike image view
+        }
         
         /*
          maybe a switch statement to try this?
          if the Y coordinate is not at center, lock in X to center, to swipe along the axis.
          if the X coordinate is not at center, lock in Y to center, to swipe along the axis
          */
-        
         
          //swipe up
          if point.y <= (view.center.y / -2) {
