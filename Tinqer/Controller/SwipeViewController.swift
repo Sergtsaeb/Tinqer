@@ -91,17 +91,17 @@ class SwipeViewController: UIViewController {
                 return
             }
             
-            //reset center to middle once the pan ends
-            UIView.animate(withDuration: 0.2) {
-                card.center = self.view.center
-                self.swipeImageView.alpha = 0
-            }
+          resetCard()
         }
      
         
     }
     
     @IBAction func reset(_ sender: UIButton) {
+       resetCard()
+    }
+    
+    func resetCard() {
         //reset center to middle once the pan ends
         UIView.animate(withDuration: 0.2) {
             self.card.center = self.view.center
