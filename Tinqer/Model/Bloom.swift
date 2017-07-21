@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Bloom {
-    var category = [Category]()
+class Bloom: Object {
+    dynamic var category = [Category]()
     
 }

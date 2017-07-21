@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Category {
+class Category: Object {
     
-    var title: String = ""
-    var color: String = ""
+    dynamic var title: String = ""
+    dynamic var color: String = ""
     
 }
