@@ -7,16 +7,15 @@
 //
 
 import Foundation
+import RealmSwift
 
-class User {
+class User: Object {
     
-    let nameFirst: String? = nil
-    let nameLast: String? = nil
-    var likedBlooms: [Bloom] = []
-    var ownedBlooms = [Bloom]()
-    var favoritedBlooms = [Bloom]()
-    var sharedBlooms = [Bloom]()
-    
-    
+    dynamic var nameFirst: String? = nil
+    dynamic var nameLast: String? = nil
+    dynamic var likedBlooms: [Bloom] = []
+    dynamic var ownedBlooms = [Bloom]()
+    dynamic var favoritedBlooms = [Bloom]()
+    dynamic var sharedBlooms = [Bloom]()
     
 }
