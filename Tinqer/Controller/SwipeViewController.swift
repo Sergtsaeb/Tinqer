@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 class SwipeViewController: UIViewController {
     
@@ -20,10 +19,6 @@ class SwipeViewController: UIViewController {
         createButton()
         
     }
-    
-    
-    
-    
     
     
     @IBAction func panCard(_ sender: UIPanGestureRecognizer) {
