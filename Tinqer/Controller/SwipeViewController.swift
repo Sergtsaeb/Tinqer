@@ -9,14 +9,14 @@
 import UIKit
 
 class SwipeViewController: UIViewController {
-
+    
     @IBOutlet weak var swipeImageView: UIImageView!
     @IBOutlet weak var card: UIView!
     var divisor: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        createButton()
         
     }
     
@@ -31,12 +31,12 @@ class SwipeViewController: UIViewController {
         
         let scale = min(100/abs(xFromCenter), 1)
         card.transform = CGAffineTransform(rotationAngle: xFromCenter/divisor).scaledBy(x: scale, y: scale)
-     
+        
         if xFromCenter > 0 {
             //imageview
             swipeImageView.image = #imageLiteral(resourceName: "likeIcon")
             swipeImageView.tintColor = UIColor.green
-        
+            
         } else {
             //dislike image view
             swipeImageView.image = #imageLiteral(resourceName: "likeIcon")
@@ -51,28 +51,28 @@ class SwipeViewController: UIViewController {
          if the X coordinate is not at center, lock in Y to center, to swipe along the axis
          */
         
-         //swipe up
-         if point.y <= (view.center.y / -2) {
-         //            print("\(point.y) swiped up \(card.center.y)")
-         print("\(point.y) swiped up \(view.center.y)")
-         }
-         
-         //swipe down
-         if point.y >= (view.center.y / 2) {
-         print("\(point.y) swiped down \(view.center.y)")
-         }
-         
-         //swipe Left
-         if point.x <= (view.center.x / -2) {
-         print("\(point.x) swiped left \(view.center.x)")
-         }
-         
-         //swipe Right
-         if point.x >= (view.center.x / 2) {
-         print("\(point.x) swiped right \(view.center.x)")
-         }
-         
-         
+        //swipe up
+        if point.y <= (view.center.y / -2) {
+            //            print("\(point.y) swiped up \(card.center.y)")
+            print("\(point.y) swiped up \(view.center.y)")
+        }
+        
+        //swipe down
+        if point.y >= (view.center.y / 2) {
+            print("\(point.y) swiped down \(view.center.y)")
+        }
+        
+        //swipe Left
+        if point.x <= (view.center.x / -2) {
+            print("\(point.x) swiped left \(view.center.x)")
+        }
+        
+        //swipe Right
+        if point.x >= (view.center.x / 2) {
+            print("\(point.x) swiped right \(view.center.x)")
+        }
+        
+        
         
         if sender.state == UIGestureRecognizerState.ended {
             
@@ -93,14 +93,14 @@ class SwipeViewController: UIViewController {
                 return
             }
             
-          resetCard()
+            resetCard()
         }
-     
+        
         
     }
     
     @IBAction func reset(_ sender: UIButton) {
-       resetCard()
+        resetCard()
     }
     
     func resetCard() {
@@ -111,8 +111,27 @@ class SwipeViewController: UIViewController {
             self.card.alpha = 1
         }
     }
+    func createButton() {
+        
+        // JDL added to access composeVC - will be replaced with tab
+        
+        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        button.backgroundColor = .blue
+        button.setTitle("Test Button", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
+        self.view.addSubview(button)
+    }
     
-   
+    func buttonAction(sender: UIButton!) {
+        print("Button tapped")
+        let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
+        
+        let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
+        self.present(controller, animated: true, completion: nil)
+    }
+    
+    
     
 }
 
