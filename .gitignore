@@ -60,7 +60,7 @@ xcuserdata/
 *.dSYM
 
 # CocoaPods - Refactored to standalone file
-
+Pods/Realm/core/librealmcore-ios.a
 
 # Carthage - Refactored to standalone file
 
