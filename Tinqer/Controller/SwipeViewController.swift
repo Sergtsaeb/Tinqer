@@ -34,12 +34,12 @@ class SwipeViewController: UIViewController {
         
         if xFromCenter > 0 {
             //imageview
-            swipeImageView.image = #imageLiteral(resourceName: "likeIcon")
+            swipeImageView.image = #imageLiteral(resourceName: "likeButton")
             swipeImageView.tintColor = UIColor.green
             
         } else {
             //dislike image view
-            swipeImageView.image = #imageLiteral(resourceName: "likeIcon")
+            swipeImageView.image = #imageLiteral(resourceName: "likeButton")
             swipeImageView.tintColor = UIColor.red
         }
         
