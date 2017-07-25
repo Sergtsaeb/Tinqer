@@ -2,7 +2,7 @@
 # Created by https://www.gitignore.io/api/xcode,macos,swift,objective-c
 
 ### macOS ###
-*.DS_Store
+.DS_Store
 .AppleDouble
 .LSOverride
 
@@ -61,6 +61,7 @@ xcuserdata/
 
 # CocoaPods - Refactored to standalone file
 Pods/Realm/core/librealmcore-ios.a
+Pods/Pods.xcodeproj/xcuserdata/sergts.xcuserdatad/xcschemes/Realm.xcscheme
 
 # Carthage - Refactored to standalone file
 
