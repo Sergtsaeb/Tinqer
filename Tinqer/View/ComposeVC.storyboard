@@ -24,25 +24,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7r-ug-Oft">
-                                <rect key="frame" x="0.0" y="28" width="375" height="84"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="55.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-Cf-nJe">
-                                <rect key="frame" x="0.0" y="352" width="375" height="20.5"/>
+                                <rect key="frame" x="0.0" y="306" width="375" height="55.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What are you thinking about today? How will you change the world? Who will be impacted? How do you categorize your bloom?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-wQ-tXc">
-                                <rect key="frame" x="27" y="112" width="321" height="240"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What are you thinking about today? How will you change the world? Who will be impacted? How do you categorize your bloom?" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-wQ-tXc">
+                                <rect key="frame" x="27" y="83.5" width="321" height="222.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xay-Jq-vKj">
-                                <rect key="frame" x="240" y="323.5" width="31.5" height="20.5"/>
+                                <rect key="frame" x="323.5" y="277.5" width="31.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,19 +50,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xay-Jq-vKj" firstAttribute="leading" secondItem="hX5-nC-sNA" secondAttribute="leading" constant="240" id="0Mr-rc-jyR"/>
+                            <constraint firstItem="hX5-nC-sNA" firstAttribute="trailing" secondItem="xay-Jq-vKj" secondAttribute="trailing" constant="20" id="0tt-WC-84r"/>
+                            <constraint firstItem="KaV-Cf-nJe" firstAttribute="height" secondItem="qep-xZ-Aan" secondAttribute="height" multiplier="1/12" id="Dhf-3x-NPM"/>
                             <constraint firstItem="0kp-wQ-tXc" firstAttribute="top" secondItem="V7r-ug-Oft" secondAttribute="bottom" id="Dzv-mO-WnH"/>
                             <constraint firstItem="V7r-ug-Oft" firstAttribute="top" secondItem="gNQ-bd-hmz" secondAttribute="bottom" constant="8" id="Gu5-wz-YD4"/>
                             <constraint firstItem="KaV-Cf-nJe" firstAttribute="top" secondItem="0kp-wQ-tXc" secondAttribute="bottom" id="Lra-Qp-r7X"/>
+                            <constraint firstItem="0kp-wQ-tXc" firstAttribute="height" secondItem="qep-xZ-Aan" secondAttribute="height" multiplier="1/3" id="Lrc-0d-tGf"/>
                             <constraint firstItem="V7r-ug-Oft" firstAttribute="leading" secondItem="qep-xZ-Aan" secondAttribute="leading" id="Qyk-NB-rwl"/>
-                            <constraint firstItem="V7r-ug-Oft" firstAttribute="height" secondItem="qep-xZ-Aan" secondAttribute="height" multiplier="1/8" id="ThG-ww-8n2"/>
+                            <constraint firstItem="V7r-ug-Oft" firstAttribute="height" secondItem="qep-xZ-Aan" secondAttribute="height" multiplier="1/12" id="ThG-ww-8n2"/>
+                            <constraint firstItem="KaV-Cf-nJe" firstAttribute="top" secondItem="xay-Jq-vKj" secondAttribute="bottom" constant="8" id="Y3N-ih-kyK"/>
                             <constraint firstItem="V7r-ug-Oft" firstAttribute="width" secondItem="qep-xZ-Aan" secondAttribute="width" id="YsH-od-T2b"/>
-                            <constraint firstItem="KaV-Cf-nJe" firstAttribute="top" secondItem="xay-Jq-vKj" secondAttribute="bottom" constant="8" symbolic="YES" id="fd9-C3-ZbG"/>
                             <constraint firstItem="0kp-wQ-tXc" firstAttribute="centerX" secondItem="hX5-nC-sNA" secondAttribute="centerX" id="igC-c6-iNM"/>
                             <constraint firstItem="0kp-wQ-tXc" firstAttribute="width" secondItem="qep-xZ-Aan" secondAttribute="width" multiplier="6:7" id="sGh-Fb-KdA"/>
                             <constraint firstItem="KaV-Cf-nJe" firstAttribute="trailing" secondItem="V7r-ug-Oft" secondAttribute="trailing" id="ssj-I8-HLa"/>
                             <constraint firstItem="KaV-Cf-nJe" firstAttribute="leading" secondItem="V7r-ug-Oft" secondAttribute="leading" id="vyO-EY-4cg"/>
-                            <constraint firstItem="xay-Jq-vKj" firstAttribute="centerY" secondItem="qep-xZ-Aan" secondAttribute="centerY" id="zeN-rq-ZvE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hX5-nC-sNA"/>
                     </view>
