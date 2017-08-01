@@ -31,6 +31,7 @@
 		C07AE7851F31194A00041470 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE77B1F31194A00041470 /* UIViewX.swift */; };
 		C07AE7861F31194A00041470 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE77C1F31194A00041470 /* UIViewXRadialGradient.swift */; };
 		C07AE7871F31194A00041470 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE77D1F31194A00041470 /* UIVisualEffectViewX.swift */; };
+		C07AE7891F3119E000041470 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE7881F3119E000041470 /* FloatingActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		C07AE77B1F31194A00041470 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		C07AE77C1F31194A00041470 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
 		C07AE77D1F31194A00041470 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		C07AE7881F3119E000041470 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		DAB40E6C34E46BCBB28B08F8 /* Pods-Tinqer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinqer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tinqer/Pods-Tinqer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				31E7CB1E1F1EC43900115A37 /* ComposeViewController.swift */,
 				C00A522A1F1EB8390020DFD8 /* PersonalViewController.swift */,
 				C0454F341F191F7300344455 /* SwipeViewController.swift */,
+				C07AE7881F3119E000041470 /* FloatingActionButton.swift */,
 				C0454F241F1580BD00344455 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -326,6 +329,7 @@
 				C07AE77E1F31194A00041470 /* UIButtonX.swift in Sources */,
 				C0454F231F1580BD00344455 /* AppDelegate.swift in Sources */,
 				C0454F351F191F7300344455 /* SwipeViewController.swift in Sources */,
+				C07AE7891F3119E000041470 /* FloatingActionButton.swift in Sources */,
 				C00A52371F1EBAB10020DFD8 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
