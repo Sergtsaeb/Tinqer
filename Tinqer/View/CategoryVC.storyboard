@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category View Controller-->
+        <scene sceneID="QQ1-v1-rLU">
+            <objects>
+                <viewController id="hk1-Xy-tr6" customClass="CategoryViewController" customModule="Tinqer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="X5F-KW-1GR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAP-lc-wtY">
+                                <rect key="frame" x="-0.5" y="611.5" width="375" height="55.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NAP-lc-wtY" firstAttribute="height" secondItem="X5F-KW-1GR" secondAttribute="height" multiplier="1/12" id="9vs-1w-JXe"/>
+                            <constraint firstItem="NAP-lc-wtY" firstAttribute="centerX" secondItem="pO5-hS-oWg" secondAttribute="centerX" id="FgI-K1-pmj"/>
+                            <constraint firstItem="NAP-lc-wtY" firstAttribute="width" secondItem="X5F-KW-1GR" secondAttribute="width" id="FgN-8p-cpo"/>
+                            <constraint firstItem="pO5-hS-oWg" firstAttribute="bottom" secondItem="NAP-lc-wtY" secondAttribute="bottom" id="Klj-6w-1E3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pO5-hS-oWg"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="NAP-lc-wtY" id="qL0-3R-sd5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PX-gd-wQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-985" y="-1203"/>
+        </scene>
+    </scenes>
+</document>

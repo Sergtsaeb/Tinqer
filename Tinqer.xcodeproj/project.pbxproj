@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		315D50251F22A38A00B2AFD7 /* ComposeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315D50241F22A38A00B2AFD7 /* ComposeVC.storyboard */; };
+		316E12BE1F2FBF39003E0C49 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E12BD1F2FBF39003E0C49 /* CategoryView.swift */; };
+		316E12C01F2FC29E003E0C49 /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 316E12BF1F2FC29E003E0C49 /* CategoryVC.xib */; };
 		31E7CB201F1EC43900115A37 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E7CB1E1F1EC43900115A37 /* ComposeViewController.swift */; };
+		31F5EB991F2EB3DC00A412DD /* CategoryVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F5EB981F2EB3DC00A412DD /* CategoryVC.storyboard */; };
+		31F5EB9F1F2EB8AD00A412DD /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F5EB9E1F2EB8AD00A412DD /* CategoryViewController.swift */; };
 		63AAE804872E0F735E5A3F92 /* Pods_Tinqer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3460543DC5F923EFF2ADFB81 /* Pods_Tinqer.framework */; };
 		C00A522B1F1EB8390020DFD8 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A522A1F1EB8390020DFD8 /* PersonalViewController.swift */; };
 		C00A522D1F1EB9160020DFD8 /* PersonalVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00A522C1F1EB9160020DFD8 /* PersonalVC.storyboard */; };
@@ -25,7 +29,11 @@
 
 /* Begin PBXFileReference section */
 		315D50241F22A38A00B2AFD7 /* ComposeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComposeVC.storyboard; sourceTree = "<group>"; };
+		316E12BD1F2FBF39003E0C49 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		316E12BF1F2FC29E003E0C49 /* CategoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryVC.xib; sourceTree = "<group>"; };
 		31E7CB1E1F1EC43900115A37 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComposeViewController.swift; path = ../ComposeViewController.swift; sourceTree = "<group>"; };
+		31F5EB981F2EB3DC00A412DD /* CategoryVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryVC.storyboard; sourceTree = "<group>"; };
+		31F5EB9E1F2EB8AD00A412DD /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		3460543DC5F923EFF2ADFB81 /* Pods_Tinqer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tinqer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		932957BBEE2166DAFC236710 /* Pods-Tinqer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinqer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tinqer/Pods-Tinqer.release.xcconfig"; sourceTree = "<group>"; };
 		C00A522A1F1EB8390020DFD8 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +86,8 @@
 		C00A522F1F1EBA460020DFD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				316E12BF1F2FC29E003E0C49 /* CategoryVC.xib */,
+				31F5EB981F2EB3DC00A412DD /* CategoryVC.storyboard */,
 				315D50241F22A38A00B2AFD7 /* ComposeVC.storyboard */,
 				C0454F261F1580BD00344455 /* Main.storyboard */,
 				C00A522C1F1EB9160020DFD8 /* PersonalVC.storyboard */,
@@ -90,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				C0454F221F1580BD00344455 /* AppDelegate.swift */,
+				31F5EB9E1F2EB8AD00A412DD /* CategoryViewController.swift */,
+				316E12BD1F2FBF39003E0C49 /* CategoryView.swift */,
 				31E7CB1E1F1EC43900115A37 /* ComposeViewController.swift */,
 				C00A522A1F1EB8390020DFD8 /* PersonalViewController.swift */,
 				C0454F341F191F7300344455 /* SwipeViewController.swift */,
@@ -179,7 +191,7 @@
 				TargetAttributes = {
 					C0454F1E1F1580BD00344455 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = P42QZ5498J;
+						DevelopmentTeam = J8S4TEK739;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -208,10 +220,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0454F2D1F1580BD00344455 /* LaunchScreen.storyboard in Resources */,
+				31F5EB991F2EB3DC00A412DD /* CategoryVC.storyboard in Resources */,
 				C00A522D1F1EB9160020DFD8 /* PersonalVC.storyboard in Resources */,
 				C0454F2A1F1580BD00344455 /* Assets.xcassets in Resources */,
 				315D50251F22A38A00B2AFD7 /* ComposeVC.storyboard in Resources */,
 				C0454F281F1580BD00344455 /* Main.storyboard in Resources */,
+				316E12C01F2FC29E003E0C49 /* CategoryVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +288,11 @@
 				C00A52351F1EBA9D0020DFD8 /* Bloom.swift in Sources */,
 				C00A522B1F1EB8390020DFD8 /* PersonalViewController.swift in Sources */,
 				31E7CB201F1EC43900115A37 /* ComposeViewController.swift in Sources */,
+				316E12BE1F2FBF39003E0C49 /* CategoryView.swift in Sources */,
 				C00A52331F1EBA900020DFD8 /* User.swift in Sources */,
 				C0454F231F1580BD00344455 /* AppDelegate.swift in Sources */,
 				C0454F351F191F7300344455 /* SwipeViewController.swift in Sources */,
+				31F5EB9F1F2EB8AD00A412DD /* CategoryViewController.swift in Sources */,
 				C00A52371F1EBAB10020DFD8 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +431,7 @@
 			baseConfigurationReference = DAB40E6C34E46BCBB28B08F8 /* Pods-Tinqer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P42QZ5498J;
+				DEVELOPMENT_TEAM = J8S4TEK739;
 				INFOPLIST_FILE = Tinqer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergtsaeb.Tinqer;
@@ -429,7 +445,7 @@
 			baseConfigurationReference = 932957BBEE2166DAFC236710 /* Pods-Tinqer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P42QZ5498J;
+				DEVELOPMENT_TEAM = J8S4TEK739;
 				INFOPLIST_FILE = Tinqer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergtsaeb.Tinqer;

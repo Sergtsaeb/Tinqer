@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7r-ug-Oft">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label old" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7r-ug-Oft">
                                 <rect key="frame" x="0.0" y="28" width="375" height="55.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -35,7 +35,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What are you thinking about today? How will you change the world? Who will be impacted? How do you categorize your bloom?" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-wQ-tXc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-wQ-tXc">
                                 <rect key="frame" x="27" y="83.5" width="321" height="222.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
@@ -70,7 +70,6 @@
                     <connections>
                         <outlet property="attachLabel" destination="KaV-Cf-nJe" id="vzz-Pe-T95"/>
                         <outlet property="bloomField" destination="0kp-wQ-tXc" id="WtR-Zl-eM7"/>
-                        <outlet property="categoryLabel" destination="V7r-ug-Oft" id="FNU-Bf-rjv"/>
                         <outlet property="characterCountLabel" destination="xay-Jq-vKj" id="cTK-GG-Um5"/>
                     </connections>
                 </viewController>

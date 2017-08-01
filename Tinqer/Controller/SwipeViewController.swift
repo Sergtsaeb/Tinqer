@@ -125,12 +125,12 @@ class SwipeViewController: UIViewController {
     
     func buttonAction(sender: UIButton!) {
         print("Button tapped")
+         
         let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
         
         let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
         self.present(controller, animated: true, completion: nil)
     }
-    
     
     
 }
