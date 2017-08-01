@@ -29,8 +29,8 @@ class SwipeViewController: UIViewController {
         
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
         
-        let scale = min(100/abs(xFromCenter), 1)
-        card.transform = CGAffineTransform(rotationAngle: xFromCenter/divisor).scaledBy(x: scale, y: scale)
+//        let scale = min(100/abs(xFromCenter), 1)
+//        card.transform = CGAffineTransform(rotationAngle: xFromCenter/divisor).scaledBy(x: scale, y: scale)
         
         if xFromCenter > 0 {
             //imageview
