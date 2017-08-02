@@ -12,11 +12,24 @@ class SwipeViewController: UIViewController {
     
     @IBOutlet weak var swipeImageView: UIImageView!
     @IBOutlet weak var card: UIView!
+    @IBOutlet weak var actionButton: UIButtonX!
     var divisor: CGFloat!
+
     
+    @IBAction func actionButton(_ sender: UIButtonX) {
+        if let button = actionButton {
+
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
+        
+        let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
+        self.present(controller, animated: true, completion: nil)
+
+        }
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        createButton()
         
     }
     
@@ -29,18 +42,18 @@ class SwipeViewController: UIViewController {
         
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
         
-//        let scale = min(100/abs(xFromCenter), 1)
+        let scale = min(100/abs(xFromCenter), 1)
 //        card.transform = CGAffineTransform(rotationAngle: xFromCenter/divisor).scaledBy(x: scale, y: scale)
         
         if xFromCenter > 0 {
             //imageview
-            swipeImageView.image = #imageLiteral(resourceName: "likeButton")
-            swipeImageView.tintColor = UIColor.green
+//            swipeImageView.image = #imageLiteral(resourceName: "ic_thumb_up")
+//            swipeImageView.tintColor = UIColor.green
             
         } else {
             //dislike image view
-            swipeImageView.image = #imageLiteral(resourceName: "likeButton")
-            swipeImageView.tintColor = UIColor.red
+//            swipeImageView.image = #imageLiteral(resourceName: "ic_thumb_down")
+//            swipeImageView.tintColor = UIColor.red
         }
         
         swipeImageView.alpha = abs(xFromCenter) / view.center.x
@@ -111,23 +124,23 @@ class SwipeViewController: UIViewController {
             self.card.alpha = 1
         }
     }
-    func createButton() {
-        
-        // JDL added to access composeVC - will be replaced with tab
-        
-        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-        button.backgroundColor = .blue
-        button.setTitle("Test Button", for: .normal)
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        
-        self.view.addSubview(button)
-    }
-    
-    func buttonAction(sender: UIButton!) {
+//    func createButton() {
+//
+//        // JDL added to access composeVC - will be replaced with tab
+//
+//        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+//        button.backgroundColor = .blue
+//        button.setTitle("Test Button", for: .normal)
+//        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+//
+//        self.view.addSubview(button)
+//    }
+
+    func buttonAction(sender: UIButtonX!) {
         print("Button tapped")
-         
+
         let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
-        
+
         let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
         self.present(controller, animated: true, completion: nil)
     }

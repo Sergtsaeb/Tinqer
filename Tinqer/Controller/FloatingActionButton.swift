@@ -12,7 +12,6 @@ class FloatingActionButton: UIButtonX {
     
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         
-        
         UIView.animate(withDuration: 0.4, animations: {
             
             if self.transform == .identity {
