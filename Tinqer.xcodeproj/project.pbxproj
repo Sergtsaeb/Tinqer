@@ -30,12 +30,9 @@
 		C07AE7801F31194A00041470 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE7761F31194A00041470 /* UILabelX.swift */; };
 		C07AE7811F31194A00041470 /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE7771F31194A00041470 /* UISliderX.swift */; };
 		C07AE7821F31194A00041470 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE7781F31194A00041470 /* UITextFieldX.swift */; };
-		C07AE7831F31194A00041470 /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE7791F31194A00041470 /* UIViewAnchorPoint.swift */; };
 		C07AE7841F31194A00041470 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE77A1F31194A00041470 /* UIViewControllerX.swift */; };
-		C07AE7851F31194A00041470 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE77B1F31194A00041470 /* UIViewX.swift */; };
 		C07AE7861F31194A00041470 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE77C1F31194A00041470 /* UIViewXRadialGradient.swift */; };
 		C07AE7871F31194A00041470 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE77D1F31194A00041470 /* UIVisualEffectViewX.swift */; };
-		C07AE7891F3119E000041470 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE7881F3119E000041470 /* FloatingActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -233,7 +230,7 @@
 				TargetAttributes = {
 					C0454F1E1F1580BD00344455 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = J8S4TEK739;
+						DevelopmentTeam = P42QZ5498J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -481,7 +478,7 @@
 			baseConfigurationReference = DAB40E6C34E46BCBB28B08F8 /* Pods-Tinqer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J8S4TEK739;
+				DEVELOPMENT_TEAM = P42QZ5498J;
 				INFOPLIST_FILE = Tinqer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergtsaeb.Tinqer;
@@ -495,7 +492,7 @@
 			baseConfigurationReference = 932957BBEE2166DAFC236710 /* Pods-Tinqer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J8S4TEK739;
+				DEVELOPMENT_TEAM = P42QZ5498J;
 				INFOPLIST_FILE = Tinqer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergtsaeb.Tinqer;
