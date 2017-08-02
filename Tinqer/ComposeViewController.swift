@@ -10,6 +10,21 @@ import UIKit
 
 class ComposeViewController: UIViewController, UITextViewDelegate {
     
+    // PRAGMA MARK: OUTLETS
+    
+    // Outlets
+    @IBOutlet weak var bloomField: UITextView!
+    @IBOutlet weak var characterCountLabel: UILabel!
+    
+    
+    @IBOutlet weak var attachLabel: UILabel!
+    var placeholderLabel : UILabel!
+    
+    var categories:CategoryView!
+    
+    // PRAGMA MARK: SETUP PAGE
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,17 +36,17 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         bloomField.becomeFirstResponder()
         placeHolderSetup()
         categoryLabelPage()
-        /*
-        // attach label - move when page is made
-        labelSetUp(for: attachLabel, color: UIColor.blue)
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipedDown))
-        swipeDown.direction = UISwipeGestureRecognizerDirection.down
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipedToLeft))
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
-        attachLabel.isUserInteractionEnabled = true
-        attachLabel.addGestureRecognizer(swipeLeft)
-        */
         
+        let myNotificationKey = "byeByeKeyboard"
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(dismissKeyboard),
+                                               name: NSNotification.Name(rawValue: myNotificationKey),
+                                               object: nil)
+        let myNotificationKeyS = "helloKeyboard"
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(showKeyboard),
+                                               name: NSNotification.Name(rawValue: myNotificationKeyS),
+                                               object: nil)
     }
     
     func categoryLabelPage() {
@@ -43,66 +58,12 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         categories.setup()
     }
     
-    // PRAGMA MARK: _    Page SetUp and Swipes
-    
-    func swipedToLeft() {
-        print("user swiped left")
-        // work in segue from top
-        let storyboard = UIStoryboard(name: "CategoryVC", bundle: nil)
-        
-        let controller = storyboard.instantiateViewController(withIdentifier: "categoryVC")
-        self.present(controller, animated: true, completion: nil)
-        
-    }
-    
-    func swipedDown() {
-        //Do stuff when swiping down is recognised
-        print("User swiped down")
-        
-        /*self.categoryLabel.alpha = 0;
-         
-         [UIView animateWithDuration:0.2
-         delay:0
-         options:UIViewAnimationOptionCurveEaseIn
-         animations:^{
-         // moves label down 100 units in the y axis
-         self.caegoryLabel.transform = CGAffineTransformMakeTranslate(0, 100);
-         // fade label in
-         self.categoryLabel.alpha = 1;
-         }
-         completion:^(BOOL finished) {
-         [UIView animateWithDuration:0.2
-         delay:0
-         options:UIViewAnimationOptionCurveEaseOut
-         animations:^{
-         // move label down further by 100 units
-         self.categoryLabel.transform = CGAffineTransformMakeTranslate(0,1000);
-         // fade label out
-         self.categoryLabel.alpha = 0;
-         }
-         completion:nil];
-         }];
-         */
-    }
-    
-    
-    
-    // PRAGMA MARK: OUTLETS
-    
-    // Outlets
-    @IBOutlet weak var bloomField: UITextView!
-    @IBOutlet weak var characterCountLabel: UILabel!
-    
-    
-    @IBOutlet weak var attachLabel: UILabel!
-    var placeholderLabel : UILabel!
-
-    var categories:CategoryView!
-
     // PRAGMA MARK: LABEL & PLACEHOLDER SETUP
-    func labelSetUp(for label:UILabel, color:UIColor) {
-        label.backgroundColor = color
-    }
+    /*
+     func labelSetUp(for label:UILabel, color:UIColor) {
+     label.backgroundColor = color
+     }
+     */
     
     func placeHolderSetup() {
         placeholderLabel = UILabel()
@@ -142,11 +103,21 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
     }
     
     
+    //using BOOL, make into one function
+    func dismissKeyboard() {
+        print("keyboard is being called to dismiss")
+        bloomField.resignFirstResponder()
+    }
+    
+    func showKeyboard() {
+        print("keyboard is being called to show")
+        bloomField.becomeFirstResponder()
+    }
+    
     
     
     
     /* TO BE DONE
-     pull down on category (dismiss keyboard) (open respective page)
      pull up on attach (dismiss keyboard) (open respective page)
      */
     

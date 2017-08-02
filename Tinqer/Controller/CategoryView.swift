@@ -10,16 +10,22 @@ import UIKit
 
 class CategoryView: UIView {
     
-    // PRAGMA MARK: ANIMATED
+    @IBOutlet weak var categoryLabel: UILabel!
     
+    var composeVC:ComposeViewController!
+    var keyboardShowing:Bool!
+    
+    // PRAGMA MARK: ANIMATED
     var animator:UIDynamicAnimator!
     var container:UICollisionBehavior!
     var snap:UISnapBehavior?
     var dynamicItem:UIDynamicItemBehavior!
     var gravity:UIGravityBehavior!
-    
     var panGestureRecognizer:UIPanGestureRecognizer!
     
+    
+    
+    // PRAGMA MARK: SETUP
     
     func setup () {
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(CategoryView.handlePan(_:)))
@@ -36,15 +42,22 @@ class CategoryView: UIView {
         gravity.gravityDirection = CGVector(dx: 0, dy: -1)
         
         container = UICollisionBehavior(items: [self])
-
+        
         configureContainer()
         
         animator.addBehavior(gravity)
         animator.addBehavior(dynamicItem)
         animator.addBehavior(container)
         
-        self.backgroundColor = UIColor.blue
-        
+        self.backgroundColor = UIColor.red
+//        categoryLabel = UILabel!
+        self.categoryLabel.text = "CATEGORY"
+        labelSetUp(for: self.categoryLabel, color: UIColor.blue)
+        keyboardShowing = true
+    }
+    
+    func labelSetUp(for label:UILabel, color:UIColor) {
+        label.backgroundColor = color
     }
     
     func configureContainer (){
@@ -56,6 +69,7 @@ class CategoryView: UIView {
         
         
     }
+    // PRAGMA MARK: HANDLING
     
     func handlePan (_ pan:UIPanGestureRecognizer){
         let velocity = pan.velocity(in: self.superview).y
@@ -73,13 +87,11 @@ class CategoryView: UIView {
                 animator.removeBehavior(snap)
                 snap = UISnapBehavior(item: self, snapTo: CGPoint(x: movement.midX, y: movement.midY))
                 animator.addBehavior(snap)
-        }
+            }
         }
     }
     
     func panGestureEnded () {
-        guard let snap = snap else { return }
-        animator.removeBehavior(snap)
         
         let velocity = dynamicItem.linearVelocity(for: self)
         
@@ -99,21 +111,43 @@ class CategoryView: UIView {
             }
         }
         
+        // not sure if this is helping or not
+        guard let snap = snap else { return }
+        animator.removeBehavior(snap)
+        
     }
     
+    
+    // maybe using BOOL, make into just one notifcation center function called with parameter of notif
     func snapToBottom() {
         gravity.gravityDirection = CGVector(dx: 0, dy: 2.5)
+        
+        if keyboardShowing == true {
+            let myNotificationKey = "byeByeKeyboard"
+            NotificationCenter.default.post(
+                name: Notification.Name(
+                    rawValue: myNotificationKey), object: self)
+            keyboardShowing = false
+        }
     }
     
     func snapToTop(){
         gravity.gravityDirection = CGVector(dx: 0, dy: -2.5)
+        
+        if keyboardShowing == false {
+            let myNotificationKey = "helloKeyboard"
+            NotificationCenter.default.post(
+                name: Notification.Name(
+                    rawValue: myNotificationKey), object: self)
+            keyboardShowing = true
+        }
     }
     
-
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-//        self.tintColor = UIColor.clear
+        //        self.tintColor = UIColor.clear
         
     }
-
+    
 }
