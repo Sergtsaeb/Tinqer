@@ -115,7 +115,7 @@
                             <constraint firstItem="ha2-WL-c5j" firstAttribute="centerX" secondItem="di9-G3-LpB" secondAttribute="centerX" id="xF0-5o-TaD"/>
                             <constraint firstItem="di9-G3-LpB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xQb-hQ-Za8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OKL-Ao-6WA" secondAttribute="bottom" constant="20" id="yJY-dy-4ms"/>
-                            <constraint firstItem="ha2-WL-c5j" firstAttribute="trailing" secondItem="iog-mE-dMj" secondAttribute="trailing" id="z83-eE-TuC"/>
+                            <constraint firstItem="ha2-WL-c5j" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iog-mE-dMj" secondAttribute="trailing" id="z83-eE-TuC"/>
                         </constraints>
                     </view>
                     <connections>
