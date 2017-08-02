@@ -13,21 +13,31 @@ class SwipeViewController: UIViewController {
     @IBOutlet weak var swipeImageView: UIImageView!
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var actionButton: FloatingActionButton!
+    
+    @IBOutlet weak var menuView: UIView!
+    
     var divisor: CGFloat!
 
     @IBAction func actionButtonPressed(_ sender: FloatingActionButton) {
-        if (actionButton) != nil {
+        UIView.animate(withDuration: 0.3, animations: {
             
-            let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
-            
-            let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
-            self.present(controller, animated: true, completion: nil)
-            
-        }
+            if self.menuView.transform == .identity {
+                self.menuView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            } else {
+                self.menuView.transform = .identity
+            }
+        })
+        //        if (actionButton) != nil {
+        //            let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
+        //            let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
+        //            self.present(controller, animated: true, completion: nil)
+        //
+        //        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         
     }
     

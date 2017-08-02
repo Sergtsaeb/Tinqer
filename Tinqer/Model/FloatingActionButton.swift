@@ -15,7 +15,6 @@ class FloatingActionButton: UIButtonX {
             
             if self.transform == .identity {
                 self.transform = CGAffineTransform(rotationAngle: 45 * (.pi / 180))
-                
             } else {
                 self.transform = .identity
             }
