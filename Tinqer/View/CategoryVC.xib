@@ -17,8 +17,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Q2-q8-n6R">
-                    <rect key="frame" x="206" y="513" width="101" height="94"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Q2-q8-n6R">
+                    <rect key="frame" x="0.0" y="611.5" width="375" height="55.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -26,12 +26,15 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="1Q2-q8-n6R" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="607" id="6u7-hx-rpn"/>
-                <constraint firstItem="1Q2-q8-n6R" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/12" id="OJ2-Mk-nNK"/>
-                <constraint firstItem="1Q2-q8-n6R" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="QTB-pa-XJU"/>
-                <constraint firstItem="1Q2-q8-n6R" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="ebc-zH-cxf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Q2-q8-n6R" secondAttribute="bottom" id="1bf-dq-VTA"/>
+                <constraint firstItem="1Q2-q8-n6R" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="6l7-80-zdE"/>
+                <constraint firstItem="1Q2-q8-n6R" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Kyq-ec-Imt"/>
+                <constraint firstItem="1Q2-q8-n6R" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/12" id="R1n-jh-n07"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="categoryLabel" destination="1Q2-q8-n6R" id="xz8-eU-8A8"/>
+            </connections>
             <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>
     </objects>
