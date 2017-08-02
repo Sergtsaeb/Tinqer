@@ -46,7 +46,7 @@
                                     <outletCollection property="gestureRecognizers" destination="zF9-3s-8t9" appends="YES" id="pdq-9y-YZU"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-Ao-6WA" customClass="UIButtonX" customModule="Tinqer" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-Ao-6WA" customClass="FloatingActionButton" customModule="Tinqer" customModuleProvider="target">
                                 <rect key="frame" x="295" y="587" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -74,7 +74,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JaG-6p-itj"/>
+                                    <action selector="actionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7u-tw-ruZ"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-Vf-BOj" customClass="UIViewX">
@@ -119,7 +119,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="actionButton" destination="OKL-Ao-6WA" id="CrQ-ks-cB4"/>
+                        <outlet property="actionButton" destination="OKL-Ao-6WA" id="jkm-Jy-EeJ"/>
                         <outlet property="card" destination="iog-mE-dMj" id="Y8G-qF-Ils"/>
                         <outlet property="swipeImageView" destination="oIu-2j-NvF" id="S4c-ql-XcJ"/>
                     </connections>
