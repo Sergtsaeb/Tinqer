@@ -12,24 +12,32 @@ class SwipeViewController: UIViewController {
     
     @IBOutlet weak var swipeImageView: UIImageView!
     @IBOutlet weak var card: UIView!
-    @IBOutlet weak var actionButton: UIButtonX!
+    @IBOutlet weak var actionButton: FloatingActionButton!
+    
+    @IBOutlet weak var menuView: UIView!
+    
     var divisor: CGFloat!
 
-    
-    @IBAction func actionButton(_ sender: UIButtonX) {
-        if let button = actionButton {
-
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
-        
-        let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
-        self.present(controller, animated: true, completion: nil)
-
-        }
-
+    @IBAction func actionButtonPressed(_ sender: FloatingActionButton) {
+        UIView.animate(withDuration: 0.3, animations: {
+            
+            if self.menuView.transform == .identity {
+                self.menuView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            } else {
+                self.menuView.transform = .identity
+            }
+        })
+        //        if (actionButton) != nil {
+        //            let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
+        //            let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
+        //            self.present(controller, animated: true, completion: nil)
+        //
+        //        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         
     }
     
@@ -42,17 +50,17 @@ class SwipeViewController: UIViewController {
         
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
         
-        let scale = min(100/abs(xFromCenter), 1)
+//        let scale = min(100/abs(xFromCenter), 1)
 //        card.transform = CGAffineTransform(rotationAngle: xFromCenter/divisor).scaledBy(x: scale, y: scale)
         
         if xFromCenter > 0 {
             //imageview
-//            swipeImageView.image = #imageLiteral(resourceName: "ic_thumb_up")
+            swipeImageView.image = #imageLiteral(resourceName: "ic_thumb_up")
 //            swipeImageView.tintColor = UIColor.green
             
         } else {
             //dislike image view
-//            swipeImageView.image = #imageLiteral(resourceName: "ic_thumb_down")
+            swipeImageView.image = #imageLiteral(resourceName: "ic_thumb_down")
 //            swipeImageView.tintColor = UIColor.red
         }
         
@@ -136,17 +144,18 @@ class SwipeViewController: UIViewController {
 //        self.view.addSubview(button)
 //    }
 
-    func buttonAction(sender: UIButtonX!) {
-        print("Button tapped")
-
-        let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
-
-        let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
-        self.present(controller, animated: true, completion: nil)
-    }
+//    func buttonAction(sender: UIButtonX!) {
+//        print("Button tapped")
+//
+//        let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
+//
+//        let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
+//        self.present(controller, animated: true, completion: nil)
+//    }
     
     
 }
+
 
 
 
