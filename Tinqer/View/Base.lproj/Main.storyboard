@@ -22,52 +22,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iog-mE-dMj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="di9-G3-LpB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iog-mE-dMj" customClass="UIViewX">
                                 <rect key="frame" x="67" y="171" width="240" height="284"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="likeButton" translatesAutoresizingMaskIntoConstraints="NO" id="oIu-2j-NvF">
-                                        <rect key="frame" x="46" y="67" width="149" height="151"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="center" fixedFrame="YES" image="ic_swap_horiz" translatesAutoresizingMaskIntoConstraints="NO" id="oIu-2j-NvF" customClass="UIImageViewX" customModule="Tinqer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="284"/>
                                         <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" red="0.8473171591758728" green="0.60466294949808641" blue="0.32709746472285367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.5450980392" green="0.4549019608" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="zF9-3s-8t9" appends="YES" id="pdq-9y-YZU"/>
-                                </connections>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-WL-c5j">
-                                <rect key="frame" x="164" y="523" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5450980392" green="0.4549019608" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GSN-vH-Nkn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-Ao-6WA" customClass="FloatingActionButton" customModule="Tinqer" customModuleProvider="target">
-                                <rect key="frame" x="310" y="600" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="floatingActionButton"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zF9-3s-8t9" appends="YES" id="pdq-9y-YZU"/>
+                                </connections>
+                            </view>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-Vf-BOj">
+                                <rect key="frame" x="173" y="463" width="315" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.34676248642381613" blue="0.40079107104398781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="154"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-Ao-6WA" customClass="FloatingActionButton" customModule="Tinqer" customModuleProvider="target">
+                                <rect key="frame" x="295" y="587" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TXS-Lv-geR"/>
+                                    <constraint firstAttribute="width" constant="60" id="hHM-z8-4fz"/>
+                                </constraints>
+                                <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animateDelay">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7u-tw-ruZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-WL-c5j">
+                                <rect key="frame" x="95" y="453" width="187" height="30"/>
+                                <color key="backgroundColor" red="0.5450980392" green="0.4549019608" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Rethink">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GSN-vH-Nkn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iog-mE-dMj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="26a-6K-rCc"/>
+                            <constraint firstAttribute="trailing" secondItem="di9-G3-LpB" secondAttribute="trailing" id="2JF-WE-xMr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iog-mE-dMj" secondAttribute="trailing" constant="52" id="2dx-uc-Rq7"/>
+                            <constraint firstAttribute="trailing" secondItem="OKL-Ao-6WA" secondAttribute="trailing" constant="20" id="BEc-3T-WbU"/>
+                            <constraint firstItem="ha2-WL-c5j" firstAttribute="top" secondItem="iog-mE-dMj" secondAttribute="top" constant="282" id="ESf-82-YNi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="di9-G3-LpB" secondAttribute="bottom" id="F8w-cy-iiP"/>
+                            <constraint firstItem="di9-G3-LpB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KE3-hy-a3j"/>
                             <constraint firstItem="iog-mE-dMj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="Pdj-1f-G8B"/>
+                            <constraint firstItem="di9-G3-LpB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Typ-kf-e3t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OKL-Ao-6WA" secondAttribute="bottom" constant="20" id="Yrr-hz-oiZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iog-mE-dMj" secondAttribute="bottom" constant="212" id="agz-ng-LZV"/>
+                            <constraint firstAttribute="trailing" secondItem="OKL-Ao-6WA" secondAttribute="trailing" constant="20" id="dg9-uI-3qt"/>
+                            <constraint firstItem="di9-G3-LpB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nnk-5J-CDj"/>
+                            <constraint firstItem="di9-G3-LpB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rzr-Ce-yTw"/>
+                            <constraint firstItem="ha2-WL-c5j" firstAttribute="leading" secondItem="iog-mE-dMj" secondAttribute="leading" constant="28" id="x64-W5-HPD"/>
+                            <constraint firstItem="ha2-WL-c5j" firstAttribute="centerX" secondItem="di9-G3-LpB" secondAttribute="centerX" constant="1" id="xF0-5o-TaD"/>
+                            <constraint firstItem="di9-G3-LpB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xQb-hQ-Za8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OKL-Ao-6WA" secondAttribute="bottom" constant="20" id="yJY-dy-4ms"/>
+                            <constraint firstItem="ha2-WL-c5j" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iog-mE-dMj" secondAttribute="trailing" constant="-25" id="z83-eE-TuC"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="actionButton" destination="OKL-Ao-6WA" id="jkm-Jy-EeJ"/>
                         <outlet property="card" destination="iog-mE-dMj" id="Y8G-qF-Ils"/>
+                        <outlet property="menuView" destination="yK2-Vf-BOj" id="bLa-BW-rap"/>
                         <outlet property="swipeImageView" destination="oIu-2j-NvF" id="S4c-ql-XcJ"/>
                     </connections>
                 </viewController>
@@ -82,7 +152,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="floatingActionButton" width="46" height="40"/>
-        <image name="likeButton" width="48" height="44"/>
+        <image name="background" width="284" height="536"/>
+        <image name="ic_swap_horiz" width="24" height="24"/>
     </resources>
 </document>

@@ -84,7 +84,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         
-        //        placeholderLabel.isHidden = !textView.text.isEmpty
+        placeholderLabel.isHidden = !textView.text.isEmpty
         let newText = (textView.text as NSString).replacingCharacters(in: range, with: text)
         let numberOfChars = 140 - Int(newText.characters.count)
         //        let countRemain = 140 - Int(numberOfChars)
