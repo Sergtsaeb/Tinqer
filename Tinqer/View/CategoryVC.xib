@@ -18,22 +18,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Q2-q8-n6R">
-                    <rect key="frame" x="0.0" y="611.5" width="375" height="55.5"/>
+                    <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EY5-pU-hIL">
+                    <rect key="frame" x="0.0" y="102.5" width="375" height="500.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Q2-q8-n6R" secondAttribute="bottom" id="1bf-dq-VTA"/>
+                <constraint firstItem="EY5-pU-hIL" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="5pb-RP-IYB"/>
                 <constraint firstItem="1Q2-q8-n6R" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="6l7-80-zdE"/>
+                <constraint firstItem="1Q2-q8-n6R" firstAttribute="top" secondItem="EY5-pU-hIL" secondAttribute="bottom" constant="8" id="EeS-VX-2si"/>
                 <constraint firstItem="1Q2-q8-n6R" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Kyq-ec-Imt"/>
+                <constraint firstItem="EY5-pU-hIL" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="3/4" id="Qvc-l7-ZC2"/>
                 <constraint firstItem="1Q2-q8-n6R" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/12" id="R1n-jh-n07"/>
+                <constraint firstItem="EY5-pU-hIL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="fIO-eS-viH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="categoryLabel" destination="1Q2-q8-n6R" id="xz8-eU-8A8"/>
+                <outlet property="categoryList" destination="EY5-pU-hIL" id="L3M-2A-Dcf"/>
             </connections>
             <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>

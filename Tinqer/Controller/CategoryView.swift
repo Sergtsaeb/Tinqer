@@ -8,14 +8,16 @@
 
 import UIKit
 
-class CategoryView: UIView {
-    
+class CategoryView: UIView, UITableViewDelegate {
+//, UITableViewDataSource {
+
     @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var categoryList: UITableView!
     
     var composeVC:ComposeViewController!
     var keyboardShowing:Bool!
     
-    // PRAGMA MARK: ANIMATED
+    // PRAGMA MARK: ANIMATED VARIABLES
     var animator:UIDynamicAnimator!
     var container:UICollisionBehavior!
     var snap:UISnapBehavior?
@@ -49,11 +51,20 @@ class CategoryView: UIView {
         animator.addBehavior(dynamicItem)
         animator.addBehavior(container)
         
+        // animations added. now load on tableview and label
+        viewLoaded()
+        
+    }
+    
+    func viewLoaded() {
         self.backgroundColor = UIColor.red
-//        categoryLabel = UILabel!
+
         self.categoryLabel.text = "CATEGORY"
         labelSetUp(for: self.categoryLabel, color: UIColor.blue)
         keyboardShowing = true
+        
+        categoryList.delegate = self
+//        categoryList.dataSource = self
     }
     
     func labelSetUp(for label:UILabel, color:UIColor) {
@@ -62,13 +73,27 @@ class CategoryView: UIView {
     
     func configureContainer (){
         let boundaryWidth = UIScreen.main.bounds.size.width
-        container.addBoundary(withIdentifier: "upper" as NSCopying, from: CGPoint(x: 0, y: -self.frame.size.height + 66), to: CGPoint(x: boundaryWidth, y: -self.frame.size.height + 66))
-        
         let boundaryHeight = UIScreen.main.bounds.size.height
+
+        container.addBoundary(withIdentifier: "upper" as NSCopying, from: CGPoint(x: 0, y: -boundaryHeight * 11/12), to: CGPoint(x: boundaryWidth, y: -boundaryHeight * 11/12))
+        
         container.addBoundary(withIdentifier: "lower" as NSCopying, from: CGPoint(x: 0, y: boundaryHeight), to: CGPoint(x: boundaryWidth, y: boundaryHeight))
         
         
     }
+    
+    
+    // PRAGMA MARK: TABLEVIEW
+    /*
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    print("asking for numbers")
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    return 1
+    }
+ */
+    
     // PRAGMA MARK: HANDLING
     
     func handlePan (_ pan:UIPanGestureRecognizer){
