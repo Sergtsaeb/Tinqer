@@ -13,12 +13,37 @@ class SwipeViewController: UIViewController {
     @IBOutlet weak var swipeImageView: UIImageView!
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var actionButton: FloatingActionButton!
+    @IBOutlet weak var bloomsButton: UIButton!
+    @IBOutlet weak var categoryButton: UIButton!
     
+    @IBOutlet weak var composeButton: UIButton!
     @IBOutlet weak var menuView: UIView!
     
     var divisor: CGFloat!
 
-    @IBAction func actionButtonPressed(_ sender: FloatingActionButton) {
+    @IBAction func composeVCButton(_ sender: Any) {
+        if (composeButton) != nil {
+            let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
+            self.present(controller, animated: true, completion: nil)
+            
+        }
+
+    }
+    
+    @IBAction func categoryVCButton(_ sender: Any) {
+    }
+    
+    @IBAction func personalVCButton(_ sender: Any) {
+        if (actionButton) != nil {
+            let storyboard = UIStoryboard(name: "PersonalVC", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "personalVC")
+            self.present(controller, animated: true, completion: nil)
+            
+        }
+    }
+    
+    @IBAction func actionButtonPressed(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
             
             if self.menuView.transform == .identity {
@@ -27,13 +52,9 @@ class SwipeViewController: UIViewController {
                 self.menuView.transform = .identity
             }
         })
-        //        if (actionButton) != nil {
-        //            let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
-        //            let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
-        //            self.present(controller, animated: true, completion: nil)
-        //
-        //        }
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
