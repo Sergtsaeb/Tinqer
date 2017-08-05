@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,16 +51,117 @@
                                     <outletCollection property="gestureRecognizers" destination="zF9-3s-8t9" appends="YES" id="pdq-9y-YZU"/>
                                 </connections>
                             </view>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-Vf-BOj">
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-Vf-BOj">
                                 <rect key="frame" x="173" y="463" width="315" height="315"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzJ-pn-GDP" customClass="FloatingActionButton" customModule="Tinqer" customModuleProvider="target">
+                                        <rect key="frame" x="31" y="41" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="7KE-Gc-xjn"/>
+                                            <constraint firstAttribute="width" constant="60" id="xVl-yA-QVa"/>
+                                        </constraints>
+                                        <state key="normal" title="+"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animateDelay">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="personalVCButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0g1-oR-h1l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-OY-k7J" customClass="FloatingActionButton" customModule="Tinqer" customModuleProvider="target">
+                                        <rect key="frame" x="127" y="41" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.4549019608" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Qmi-bm-iAA"/>
+                                            <constraint firstAttribute="width" constant="60" id="fgi-V6-VPI"/>
+                                        </constraints>
+                                        <state key="normal" title="+"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animateDelay">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="composeVCButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i19-rp-kg9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2n-xC-lCd" customClass="FloatingActionButton" customModule="Tinqer" customModuleProvider="target">
+                                        <rect key="frame" x="31" y="127" width="60" height="60"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="UWN-r9-6rK"/>
+                                            <constraint firstAttribute="width" constant="60" id="gbE-02-QRQ"/>
+                                        </constraints>
+                                        <state key="normal" title="+"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animateDelay">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="categoryVCButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7d-xY-dKX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34676248642381613" blue="0.40079107104398781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="u3C-OY-k7J" firstAttribute="leading" secondItem="AzJ-pn-GDP" secondAttribute="trailing" constant="36" id="GCU-aa-2k6"/>
+                                    <constraint firstAttribute="trailing" secondItem="u3C-OY-k7J" secondAttribute="trailing" constant="128" id="V1B-iA-cjO"/>
+                                    <constraint firstItem="u2n-xC-lCd" firstAttribute="top" secondItem="AzJ-pn-GDP" secondAttribute="bottom" constant="26" id="Xoh-ec-jZf"/>
+                                    <constraint firstItem="u2n-xC-lCd" firstAttribute="centerY" secondItem="yK2-Vf-BOj" secondAttribute="centerY" id="ZUx-9u-BBK"/>
+                                    <constraint firstItem="u2n-xC-lCd" firstAttribute="leading" secondItem="yK2-Vf-BOj" secondAttribute="leading" constant="31" id="awK-O5-Hkj"/>
+                                    <constraint firstItem="u2n-xC-lCd" firstAttribute="leading" secondItem="AzJ-pn-GDP" secondAttribute="leading" id="gWM-wx-pxs"/>
+                                    <constraint firstItem="u3C-OY-k7J" firstAttribute="top" secondItem="yK2-Vf-BOj" secondAttribute="top" constant="41" id="k4v-Gc-zUx"/>
+                                    <constraint firstItem="u2n-xC-lCd" firstAttribute="trailing" secondItem="AzJ-pn-GDP" secondAttribute="trailing" id="xrl-vZ-jFj"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="154"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -119,11 +220,15 @@
                             <constraint firstAttribute="trailing" secondItem="OKL-Ao-6WA" secondAttribute="trailing" constant="20" id="BEc-3T-WbU"/>
                             <constraint firstItem="ha2-WL-c5j" firstAttribute="top" secondItem="iog-mE-dMj" secondAttribute="top" constant="282" id="ESf-82-YNi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="di9-G3-LpB" secondAttribute="bottom" id="F8w-cy-iiP"/>
+                            <constraint firstItem="yK2-Vf-BOj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="173" id="IWh-h4-x9L"/>
                             <constraint firstItem="di9-G3-LpB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KE3-hy-a3j"/>
                             <constraint firstItem="iog-mE-dMj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="Pdj-1f-G8B"/>
                             <constraint firstItem="di9-G3-LpB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Typ-kf-e3t"/>
+                            <constraint firstItem="yK2-Vf-BOj" firstAttribute="top" secondItem="iog-mE-dMj" secondAttribute="bottom" constant="8" symbolic="YES" id="Xp1-Jt-UFm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OKL-Ao-6WA" secondAttribute="bottom" constant="20" id="Yrr-hz-oiZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iog-mE-dMj" secondAttribute="bottom" constant="212" id="agz-ng-LZV"/>
+                            <constraint firstAttribute="trailing" secondItem="yK2-Vf-BOj" secondAttribute="trailing" constant="-113" id="cR1-8w-9eO"/>
+                            <constraint firstAttribute="bottom" secondItem="yK2-Vf-BOj" secondAttribute="bottom" constant="-111" id="dXW-jm-dnD"/>
                             <constraint firstAttribute="trailing" secondItem="OKL-Ao-6WA" secondAttribute="trailing" constant="20" id="dg9-uI-3qt"/>
                             <constraint firstItem="di9-G3-LpB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nnk-5J-CDj"/>
                             <constraint firstItem="di9-G3-LpB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rzr-Ce-yTw"/>
@@ -136,7 +241,10 @@
                     </view>
                     <connections>
                         <outlet property="actionButton" destination="OKL-Ao-6WA" id="jkm-Jy-EeJ"/>
+                        <outlet property="bloomsButton" destination="AzJ-pn-GDP" id="XFE-5S-P5E"/>
                         <outlet property="card" destination="iog-mE-dMj" id="Y8G-qF-Ils"/>
+                        <outlet property="categoryButton" destination="u2n-xC-lCd" id="a9z-j1-Edh"/>
+                        <outlet property="composeButton" destination="u3C-OY-k7J" id="4ow-vM-m2L"/>
                         <outlet property="menuView" destination="yK2-Vf-BOj" id="bLa-BW-rap"/>
                         <outlet property="swipeImageView" destination="oIu-2j-NvF" id="S4c-ql-XcJ"/>
                     </connections>

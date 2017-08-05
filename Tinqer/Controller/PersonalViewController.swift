@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PersonalViewController: UIViewController, UITableViewDataSource {
+    var blooms = [Bloom]()
     
     @IBOutlet weak var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,7 @@ class PersonalViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = blooms[indexPath.row].text
         return cell
     }
 

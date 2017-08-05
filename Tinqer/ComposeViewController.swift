@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ComposeViewController: UIViewController, UITextViewDelegate {
+    let realm = try! Realm()
     
     // PRAGMA MARK: OUTLETS
     
@@ -16,6 +18,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var bloomField: UITextView!
     @IBOutlet weak var characterCountLabel: UILabel!
     
+    @IBOutlet weak var submitButton: UILabel!
     
     @IBOutlet weak var attachLabel: UILabel!
     var placeholderLabel : UILabel!
@@ -114,6 +117,19 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         bloomField.becomeFirstResponder()
     }
     
+    @IBAction func submitButtonPressed(_ sender: Any) {
+        addBloom()
+        self.dismiss(animated: false, completion: nil)
+    }
+    
+    func addBloom() {
+        let bloom = Bloom()
+        bloom.text = bloomField.text
+        
+        try! realm.write {
+            realm.add(bloom)
+        }
+    }
     
     
     
