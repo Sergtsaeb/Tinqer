@@ -35,7 +35,7 @@ class SwipeViewController: UIViewController {
     }
     
     @IBAction func personalVCButton(_ sender: Any) {
-        if (actionButton) != nil {
+        if (bloomsButton) != nil {
             let storyboard = UIStoryboard(name: "PersonalVC", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "personalVC")
             self.present(controller, animated: true, completion: nil)

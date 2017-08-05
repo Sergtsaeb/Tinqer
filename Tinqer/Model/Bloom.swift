@@ -11,5 +11,5 @@ import RealmSwift
 
 class Bloom: Object {
     dynamic var category = [Category]()
-    
+    dynamic var text: String?
 }

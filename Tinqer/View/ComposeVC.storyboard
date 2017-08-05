@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,12 +29,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-Cf-nJe">
-                                <rect key="frame" x="0.0" y="306" width="375" height="55.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-wQ-tXc">
                                 <rect key="frame" x="27" y="83.5" width="321" height="222.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,6 +37,23 @@
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xay-Jq-vKj">
                                 <rect key="frame" x="323.5" y="277.5" width="31.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uu7-sF-k2n">
+                                <rect key="frame" x="286" y="331.5" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="0FE-kQ-v4d"/>
+                                    <constraint firstAttribute="height" constant="30" id="bTM-QY-2jm"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="vbO-5N-l7M" eventType="touchUpInside" id="FCV-SK-zwp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATTACH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-Cf-nJe">
+                                <rect key="frame" x="0.0" y="340" width="375" height="55.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -56,10 +67,12 @@
                             <constraint firstItem="V7r-ug-Oft" firstAttribute="top" secondItem="gNQ-bd-hmz" secondAttribute="bottom" constant="8" id="Gu5-wz-YD4"/>
                             <constraint firstItem="KaV-Cf-nJe" firstAttribute="top" secondItem="0kp-wQ-tXc" secondAttribute="bottom" id="Lra-Qp-r7X"/>
                             <constraint firstItem="0kp-wQ-tXc" firstAttribute="height" secondItem="qep-xZ-Aan" secondAttribute="height" multiplier="1/3" id="Lrc-0d-tGf"/>
+                            <constraint firstItem="hX5-nC-sNA" firstAttribute="trailing" secondItem="Uu7-sF-k2n" secondAttribute="trailing" constant="13" id="Q8z-En-cTb"/>
                             <constraint firstItem="V7r-ug-Oft" firstAttribute="leading" secondItem="qep-xZ-Aan" secondAttribute="leading" id="Qyk-NB-rwl"/>
                             <constraint firstItem="V7r-ug-Oft" firstAttribute="height" secondItem="qep-xZ-Aan" secondAttribute="height" multiplier="1/12" id="ThG-ww-8n2"/>
                             <constraint firstItem="KaV-Cf-nJe" firstAttribute="top" secondItem="xay-Jq-vKj" secondAttribute="bottom" constant="8" id="Y3N-ih-kyK"/>
                             <constraint firstItem="V7r-ug-Oft" firstAttribute="width" secondItem="qep-xZ-Aan" secondAttribute="width" id="YsH-od-T2b"/>
+                            <constraint firstItem="Uu7-sF-k2n" firstAttribute="bottom" secondItem="KaV-Cf-nJe" secondAttribute="bottom" id="ayC-un-pw7"/>
                             <constraint firstItem="0kp-wQ-tXc" firstAttribute="centerX" secondItem="hX5-nC-sNA" secondAttribute="centerX" id="igC-c6-iNM"/>
                             <constraint firstItem="0kp-wQ-tXc" firstAttribute="width" secondItem="qep-xZ-Aan" secondAttribute="width" multiplier="6:7" id="sGh-Fb-KdA"/>
                             <constraint firstItem="KaV-Cf-nJe" firstAttribute="trailing" secondItem="V7r-ug-Oft" secondAttribute="trailing" id="ssj-I8-HLa"/>
@@ -71,6 +84,7 @@
                         <outlet property="attachLabel" destination="KaV-Cf-nJe" id="vzz-Pe-T95"/>
                         <outlet property="bloomField" destination="0kp-wQ-tXc" id="WtR-Zl-eM7"/>
                         <outlet property="characterCountLabel" destination="xay-Jq-vKj" id="cTK-GG-Um5"/>
+                        <outlet property="submitButton" destination="KaV-Cf-nJe" id="keN-Hf-mAl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flD-2w-vQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
