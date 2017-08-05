@@ -128,6 +128,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         
         try! realm.write {
             realm.add(bloom)
+            print(bloom.text)
         }
     }
     
