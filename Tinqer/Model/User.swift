@@ -13,9 +13,9 @@ class User: Object {
     
     dynamic var nameFirst: String? = nil
     dynamic var nameLast: String? = nil
-    dynamic var likedBlooms: [Bloom] = []
-    dynamic var ownedBlooms = [Bloom]()
-    dynamic var favoritedBlooms = [Bloom]()
-    dynamic var sharedBlooms = [Bloom]()
+    let likedBlooms = List<Bloom>()
+    let ownedBlooms = List<Bloom>()
+    let favoritedBlooms = List<Bloom>()
+    let sharedBlooms = List<Bloom>()
     
 }

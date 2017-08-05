@@ -15,3 +15,4 @@ class Category: Object {
     dynamic var color: String = ""
     
 }
+

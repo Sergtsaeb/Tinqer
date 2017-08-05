@@ -118,6 +118,11 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func submitButtonPressed(_ sender: Any) {
+        addBloom()
+        self.dismiss(animated: false, completion: nil)
+    }
+    
+    func addBloom() {
         let bloom = Bloom()
         bloom.text = bloomField.text
         
