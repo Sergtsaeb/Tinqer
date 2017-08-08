@@ -25,7 +25,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="di9-G3-LpB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iog-mE-dMj" customClass="UIViewX">
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iog-mE-dMj">
                                 <rect key="frame" x="67" y="171" width="240" height="284"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="center" fixedFrame="YES" image="ic_swap_horiz" translatesAutoresizingMaskIntoConstraints="NO" id="oIu-2j-NvF" customClass="UIImageViewX" customModule="Tinqer" customModuleProvider="target">

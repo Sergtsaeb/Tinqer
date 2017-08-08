@@ -25,9 +25,6 @@
 		C0454F2A1F1580BD00344455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0454F291F1580BD00344455 /* Assets.xcassets */; };
 		C0454F2D1F1580BD00344455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0454F2B1F1580BD00344455 /* LaunchScreen.storyboard */; };
 		C0454F351F191F7300344455 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0454F341F191F7300344455 /* SwipeViewController.swift */; };
-		C06200ED1F354B67004BF302 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06200EC1F354B67004BF302 /* UIButtonX.swift */; };
-		C06200EF1F354F1C004BF302 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06200EE1F354F1C004BF302 /* UIImageViewX.swift */; };
-		C06200F11F354F22004BF302 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06200F01F354F22004BF302 /* UIViewX.swift */; };
 		C07AE7B91F31AF5E00041470 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07AE7B81F31AF5E00041470 /* FloatingActionButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +50,6 @@
 		C0454F2C1F1580BD00344455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0454F2E1F1580BD00344455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0454F341F191F7300344455 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
-		C06200EC1F354B67004BF302 /* UIButtonX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
-		C06200EE1F354F1C004BF302 /* UIImageViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
-		C06200F01F354F22004BF302 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		C06200F21F355231004BF302 /* Tinqer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tinqer.entitlements; sourceTree = "<group>"; };
 		C07AE7B81F31AF5E00041470 /* FloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		DAB40E6C34E46BCBB28B08F8 /* Pods-Tinqer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinqer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tinqer/Pods-Tinqer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,9 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				C07AE7B81F31AF5E00041470 /* FloatingActionButton.swift */,
-				C06200EC1F354B67004BF302 /* UIButtonX.swift */,
-				C06200EE1F354F1C004BF302 /* UIImageViewX.swift */,
-				C06200F01F354F22004BF302 /* UIViewX.swift */,
 				C00A52321F1EBA900020DFD8 /* User.swift */,
 				C00A52341F1EBA9D0020DFD8 /* Bloom.swift */,
 				C00A52361F1EBAB10020DFD8 /* Category.swift */,
@@ -307,13 +298,10 @@
 				C00A52351F1EBA9D0020DFD8 /* Bloom.swift in Sources */,
 				C00A522B1F1EB8390020DFD8 /* PersonalViewController.swift in Sources */,
 				31E7CB201F1EC43900115A37 /* ComposeViewController.swift in Sources */,
-				C06200EF1F354F1C004BF302 /* UIImageViewX.swift in Sources */,
-				C06200F11F354F22004BF302 /* UIViewX.swift in Sources */,
 				316E12BE1F2FBF39003E0C49 /* CategoryView.swift in Sources */,
 				C00A52331F1EBA900020DFD8 /* User.swift in Sources */,
 				C0454F231F1580BD00344455 /* AppDelegate.swift in Sources */,
 				C0454F351F191F7300344455 /* SwipeViewController.swift in Sources */,
-				C06200ED1F354B67004BF302 /* UIButtonX.swift in Sources */,
 				31F5EB9F1F2EB8AD00A412DD /* CategoryViewController.swift in Sources */,
 				C07AE7B91F31AF5E00041470 /* FloatingActionButton.swift in Sources */,
 				C00A52371F1EBAB10020DFD8 /* Category.swift in Sources */,
