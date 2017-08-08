@@ -14,7 +14,6 @@ class PersonalViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

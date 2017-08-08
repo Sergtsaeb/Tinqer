@@ -153,26 +153,6 @@ class SwipeViewController: UIViewController {
             self.card.alpha = 1
         }
     }
-//    func createButton() {
-//
-//        // JDL added to access composeVC - will be replaced with tab
-//
-//        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-//        button.backgroundColor = .blue
-//        button.setTitle("Test Button", for: .normal)
-//        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-//
-//        self.view.addSubview(button)
-//    }
-
-//    func buttonAction(sender: UIButtonX!) {
-//        print("Button tapped")
-//
-//        let storyboard = UIStoryboard(name: "ComposeVC", bundle: nil)
-//
-//        let controller = storyboard.instantiateViewController(withIdentifier: "composeVC")
-//        self.present(controller, animated: true, completion: nil)
-//    }
     
     
 }
